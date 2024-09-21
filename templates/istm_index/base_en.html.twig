@@ -1,0 +1,84 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+  Actualités - POPOLI FRATELLI RDC
+{% endblock %}
+{% block events_news %}
+  <div class="header-events-news">
+    <div class="container">
+      <div class="events-news-title flex">
+        <h1>
+          <a href="">Actualités</a> et <a href="">Evénéments</a>
+        </h1>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-events-news">
+    <div class="container">
+      <div class="events-news-menu">
+        <ul class="flex">
+          <li>
+            <a href="/actualites_evenements">
+              <i class="fa-solid fa-house"></i>
+            </a>
+          </li>
+          <li>
+            <a class="flex" href="/actualites_evenements/nouvelle/">
+              <i class="fa-regular fa-newspaper"></i><p>
+                Nouvelles
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="/actualites_evenements/evenements/" class="flex">
+              <i class="fa-regular fa-calendar-days"></i><p>
+                Evénéments
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="flex">
+              <i class="fa-solid fa-link"></i><p>
+                Nous joindre
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+{% block body %}
+
+{% endblock %}
+{% block feedback %}
+  <div class="news-feedback flex">
+    <div class="news-feedback-text flex">
+      <div class="feedback-text-left">
+        <h3>
+          Actualités
+        </h3>
+        <p>
+          Informations générales
+        </p>
+        <div>
+          <a class="ss" href="mailto:info@popolifratelli-rdc.org">info@popolifratelli-rdc.org</a>
+        </div>
+        <div>
+          <a class="ss" href="tel:+243993342947">+243 993 342 947</a>
+        </div>
+      </div>
+      <div class="feedback-text-rigth">
+        <p>
+          Rélations médias
+        </p>
+        <div class="flex">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="news-feedback-img"></div>
+  </div>
+{% endblock %}
